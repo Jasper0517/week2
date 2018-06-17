@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.5.16/vue.min.js"></script>
+    <!-- 引入样式 -->
+    <link rel="stylesheet" href="https://unpkg.com/element-ui/lib/theme-chalk/index.css">
+    <!-- 引入组件库 -->
+    <script src="https://unpkg.com/element-ui/lib/index.js"></script>
+    <link rel="stylesheet" href="./stylesheets/all.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
+</head>
+<body>
+    <div id="app">
+        <div id="nav">
+            <span>
+                HaveFun
+            </span>  
+            <i class="fas fa-search"></i>
+            <input type="text" name="" id="" placeholder="Explore your own activities">
+        </div>
+        <div id="a-body">
+            <div id="body-left">
+                <div class="left location">
+                    <span>Location</span>
+                    <el-select name="" id="" >
+                        <el-option value="Taiwan">Taiwan</el-option>
+                    </el-select>
+                </div>
+                <div class="left date">
+                    <span>Date</span>
+                    from 
+                    <el-input type="date" size="small"></el-input>
+                    to 
+                    <el-input type="date" size="small"></el-input>
+                </div>
+
+                <div class="left date">
+                    <span>Categories</span>
+                    <input type="checkbox" name="" id=""> All <br>
+                    <input type="checkbox" name="" id=""> Enterainment <br>
+                    <input type="checkbox" name="" id=""> Food <br>
+                    <input type="checkbox" name="" id=""> Learning <br>
+                    <input type="checkbox" name="" id=""> Outdoors <br>
+                </div>
+            </div>
+            <div id="body-right">
+                <span class="tag_tilte">
+                    Showing 
+                    <span class="num">15</span> 
+                    results by…
+                </span>
+                <span class="tag">Koahsiung</span> 
+                <span class="tag">Entertainment</span>
+                <div class="list">
+                    <div class="img"></div> 
+                    <h3 class="title">Kogi Cosby sweater.</h3>
+                    <div class="contact">
+                            Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.
+                    </div>
+                    <span class="back2">Ethan Foster</span>
+                    <span class="back3">Entertainment</span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Kaohsiung City</span>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="date">2018/5/24 - 2018/5/31</span>
+                </div>
+                <div class="list">
+                    <div class="img"></div> 
+                    <h3 class="title">Kogi Cosby sweater.</h3>
+                    <div class="contact">
+                            Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.
+                    </div>
+                    <span class="back2">Ethan Foster</span>
+                    <span class="back3">Entertainment</span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Kaohsiung City</span>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="date">2018/5/24 - 2018/5/31</span>
+                </div>
+                <div class="list">
+                    <div class="img"></div> 
+                    <h3 class="title">Kogi Cosby sweater.</h3>
+                    <div class="contact">
+                            Donec euismod scelerisque ligula. Maecenas eu varius risus, eu aliquet arcu. Curabitur fermentum suscipit est, tincidunt mattis lorem luctus id. Donec eget massa a diam condimentum pretium. Aliquam erat volutpat. Integer ut tincidunt orci. Etiam tristique, elit ut consectetur iaculis, metus lectus mattis justo, vel mollis eros neque quis augue. Sed lobortis ultrices lacus, a placerat metus rutrum sit amet. Aenean ut suscipit justo.
+                    </div>
+                    <span class="back2">Ethan Foster</span>
+                    <span class="back3">Entertainment</span>
+                    <br>
+                    <i class="fas fa-map-marker-alt"></i>
+                    <span class="location">Kaohsiung City</span>
+                    <i class="far fa-calendar-alt"></i>
+                    <span class="date">2018/5/24 - 2018/5/31</span>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    var vm = new Vue({
+        el: "#app",
+        data:{
+            input:"test",
+        }
+    })
+</script>
+</html>
