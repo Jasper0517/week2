@@ -79,7 +79,12 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   font-size: 36px;
   color: white;
 }
-/* line 28, ../sass/all.scss */
+/* line 27, ../sass/all.scss */
+#app #nav span a {
+  text-decoration: none;
+  color: white;
+}
+/* line 32, ../sass/all.scss */
 #app #nav i {
   position: absolute;
   top: 42px;
@@ -87,7 +92,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   margin-right: -21px;
   z-index: 9999;
 }
-/* line 35, ../sass/all.scss */
+/* line 39, ../sass/all.scss */
 #app #nav input[type='text'] {
   height: 26px;
   width: 388px;
@@ -97,44 +102,75 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   outline: none;
   padding-left: 36px;
   z-index: -1;
-  font-family: Roboto-Italic;
   font-size: 24px;
+}
+/* line 50, ../sass/all.scss */
+#app #nav ::placeholder {
+  font-family: Roboto-Italic;
   color: rgba(255, 255, 255, 0.5);
 }
-/* line 49, ../sass/all.scss */
+/* line 55, ../sass/all.scss */
 #app #a-body {
   background-color: #F2F2F2;
+  padding-bottom: 100px;
   position: relative;
+  width: 100%;
 }
-/* line 53, ../sass/all.scss */
+/* line 62, ../sass/all.scss */
 #app #a-body #body-left {
   position: absolute;
   display: inline-block;
   width: 300px;
-  height: 100%;
+  height: 550px;
   margin-left: 38px;
   background-color: #EBEBEB;
 }
-/* line 60, ../sass/all.scss */
+/* line 69, ../sass/all.scss */
 #app #a-body #body-left .left {
-  border-bottom: 1px solid #D7D7D7;
+  border-top: 1px solid #D7D7D7;
   padding: 20px 40px;
   margin-bottom: 20px;
 }
-/* line 65, ../sass/all.scss */
+/* line 73, ../sass/all.scss */
 #app #a-body #body-left .left span {
   display: block;
   font-family: Roboto-Bold;
   font-weight: bold;
-  font-size: 24px;
+  font-size: 20px;
   margin-bottom: 20px;
 }
-/* line 72, ../sass/all.scss */
+/* line 80, ../sass/all.scss */
 #app #a-body #body-left .left select {
   width: 220px;
   height: 40px;
+  font-size: 16px;
 }
-/* line 78, ../sass/all.scss */
+/* line 85, ../sass/all.scss */
+#app #a-body #body-left .left input[type="checkbox"] {
+  background-color: white;
+}
+/* line 87, ../sass/all.scss */
+#app #a-body #body-left .left input[type="checkbox"]:checked {
+  color: RGBA(119, 68, 235, 1);
+}
+/* line 91, ../sass/all.scss */
+#app #a-body #body-left .left input[type="date"] {
+  display: inline-block;
+  width: 169px;
+  height: 40px;
+  outline: none;
+  border: none;
+  padding: 0;
+  margin-bottom: 5px;
+  font-size: 16px;
+}
+/* line 103, ../sass/all.scss */
+#app #a-body #body-left .date div {
+  text-align: right;
+  display: inline-block;
+  width: 20%;
+}
+/* line 110, ../sass/all.scss */
 #app #a-body #body-right {
   font-family: Roboto-Regular;
   font-weight: bold;
@@ -143,86 +179,126 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   padding-left: 389px;
   margin-top: 24px;
 }
-/* line 85, ../sass/all.scss */
+/* line 117, ../sass/all.scss */
 #app #a-body #body-right .tag_tilte {
   display: block;
   margin-bottom: 30px;
+  font-size: 24px;
 }
-/* line 89, ../sass/all.scss */
+/* line 122, ../sass/all.scss */
 #app #a-body #body-right .num {
   color: #9013FE;
 }
-/* line 92, ../sass/all.scss */
+/* line 125, ../sass/all.scss */
 #app #a-body #body-right .tag {
   font-size: Roboto-Italic;
-  font-size: 19px;
+  font-size: 16px;
   margin-top: 100px;
   color: #9013FE;
   padding: 4px 16px 4px 16px;
   border-radius: 100px;
   border: 1px solid #9013FE;
+  cursor: pointer;
 }
-/* line 101, ../sass/all.scss */
+/* line 134, ../sass/all.scss */
+#app #a-body #body-right .tag:hover {
+  background-color: RGBA(119, 68, 235, 1);
+  color: white;
+}
+/* line 139, ../sass/all.scss */
 #app #a-body #body-right .list {
   margin-top: 40px;
-  width: 790px;
-  height: 220px;
-  position: relative;
+  width: 780px;
   background-color: #FFFFFF;
 }
-/* line 107, ../sass/all.scss */
+/* line 143, ../sass/all.scss */
 #app #a-body #body-right .list .img {
-  position: absolute;
+  display: inline-block;
   background-image: url(../img/1.jpg);
   background-size: 100% 100%;
   width: 220px;
   height: 220px;
-  display: inline-block;
+  margin-bottom: -20px;
 }
-/* line 115, ../sass/all.scss */
-#app #a-body #body-right .list h3 {
+/* line 151, ../sass/all.scss */
+#app #a-body #body-right .list .context {
   display: inline-block;
-  margin-top: 20px;
-  margin-left: 230px;
+  width: calc(100% - 250px);
+  padding: 10px;
+}
+/* line 155, ../sass/all.scss */
+#app #a-body #body-right .list .context h3 {
+  display: inline-block;
   color: #9013FE;
-  font-size: 36px;
-  width: 436px;
+  font-size: 24px;
 }
-/* line 123, ../sass/all.scss */
-#app #a-body #body-right .list .contact {
+/* line 160, ../sass/all.scss */
+#app #a-body #body-right .list .context .contact {
+  display: inline-block;
   margin-top: 20px;
-  margin-left: 230px;
   overflow: hidden;
   height: 50px;
-  width: 520px;
   line-height: 25px;
   font-family: Roboto-Regular;
   font-size: 16px;
 }
-/* line 133, ../sass/all.scss */
-#app #a-body #body-right .list .back2 {
+/* line 169, ../sass/all.scss */
+#app #a-body #body-right .list .context .back2 {
   font-family: Roboto-Bold;
   margin-top: 20px;
-  margin-left: 230px;
+  font-size: 16px;
 }
-/* line 138, ../sass/all.scss */
-#app #a-body #body-right .list .back3 {
+/* line 174, ../sass/all.scss */
+#app #a-body #body-right .list .context .back3 {
   display: inline-block;
   font-family: Roboto-Italic;
   margin-top: 20px;
+  margin-bottom: 10px;
   background-color: #D7D7D7;
   color: white;
   border-radius: 100px;
   padding: 2px 16px 2px 16px;
+  font-size: 16px;
 }
-/* line 147, ../sass/all.scss */
-#app #a-body #body-right .list .fa-map-marker-alt {
-  margin-left: 230px;
+/* line 185, ../sass/all.scss */
+#app #a-body #body-right .list .context .fa-map-marker-alt {
   color: black;
 }
-/* line 151, ../sass/all.scss */
-#app #a-body #body-right .list .date, #app #a-body #body-right .list .location {
+/* line 188, ../sass/all.scss */
+#app #a-body #body-right .list .context .date, #app #a-body #body-right .list .context .location {
   display: inline-block;
-  margin-top: 10px;
+  margin: 10px 0;
   color: #9B9B9B;
+  font-size: 16px;
+}
+/* line 198, ../sass/all.scss */
+#app .page {
+  position: absolute;
+  margin-top: 24px;
+  letter-spacing: -4px;
+  left: 840px;
+  text-align: center;
+  bottom: 20px;
+}
+/* line 205, ../sass/all.scss */
+#app .page > * {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  font-size: 16px;
+  background-color: RGBA(255, 255, 255, 1);
+  color: RGBA(119, 68, 235, 1);
+  cursor: pointer;
+}
+/* line 213, ../sass/all.scss */
+#app .page > *:hover {
+  background-color: RGBA(119, 68, 235, 1);
+  color: white;
+}
+/* line 217, ../sass/all.scss */
+#app .page > *:before {
+  content: "";
+  display: inline-block;
+  height: 100%;
+  vertical-align: middle;
 }
